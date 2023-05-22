@@ -7,7 +7,7 @@ const links: Array<any> = []
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '文档',
+  title: 'Leo',
   titleTemplate: undefined,
   description: '帮助你快速创建项目的官方文档站点；快速搭建属于你的个人知识体系、博客；',
   ignoreDeadLinks: true,
@@ -214,7 +214,17 @@ function sidebarGuide() {
       items: [
         { text: '安装及使用', link: '/guide/install' },
         { text: '工程介绍', link: '/guide/project-introduce' },
-        { text: '页面', link: '/guide/page-introduce' },
+        { text: '页面介绍', link: '/guide/page-introduce' },
+      ]
+    },
+    {
+      text: '全局配置',
+      collapsible: true,
+      items: [
+        { text: 'pages.json页面配置', link: '/guide/page-config' },
+        { text: 'manifest.json应用配置', link: '/guide/manifest-config' },
+        { text: 'uni.scss整体样式', link: '/guide/uniscss-config' },
+        { text: 'App.vue', link: '/guide/appvue-config' },
       ]
     },
     {

@@ -4,7 +4,7 @@ import './styles/index.scss'
 
 import HomeSponsors from './components/HomeSponsors.vue'
 import AsideSponsors from './components/AsideSponsors.vue'
-import SvgImage from './components/SvgImage.vue'
+import SvgImage from './components/SvgImage.vue';
 
 export default Object.assign({
     ...Theme,
