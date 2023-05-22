@@ -3,9 +3,9 @@ layout: home
 titleTemplate: false
 
 hero:
-  name: 文档站
-  text: "创建个人网站、官方站点不再困难"
-  tagline: "帮助你快速创建项目的官方文档站点；快速搭建属于你的个人知识体系、博客；"
+  name: LEO
+  text: "H5+小程序=一套代码"
+  tagline: "简单、高效进行跨端开发,一套代码，多端运行"
   actions:
     - theme: brand
       text: 开始使用

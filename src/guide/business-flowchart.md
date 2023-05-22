@@ -1,3 +1,3 @@
-# xxx - 业务流程图
+# Leo - 架构图
 
-![xxx - 业务流程图](../assets/images/flowchart-demo.png)
+![架构图](https://model-tianmunews.oss-cn-hangzhou.aliyuncs.com/model/LightPicture/Untitled.png)

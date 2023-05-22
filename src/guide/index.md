@@ -1,37 +1,28 @@
-# 基础资料
+# Leo介绍
+## 简介
+Leo是一个跨平台开发解决方案。支持使用Vue3+TypeScript开发Web、H5、微信/百度/支付宝/字节小程序。
 
-## 业务流程图
+现如今市面上小程序端的形态多种多样。当业务要求同时在不同的端都要求有所表现的时候，针对不同的端去编写多套代码的成本显然非常高，这时候只编写一套代码就能够适配到多端的能力就显得极为需要。
 
-[业务流程](./business-flowchart)
+## 特性
+### 多端转换支持
+Leo底层使用uni-app的代码转换能力，可以支持转换到 H5 以及任意小程序平台。
+###  标准化开发
+Leo内置默认集成了一系列优秀的前端工程化方案，比如
+- Vue3
+- TypeScript
+- Pinia
+- TailwindCss
+- UView
+### 工具链支持
+Leo提供了一套完整的开发工具链，包括
+- Leo-CLI
+- Leo-UI
+- Leo-Router
+- Leo-Store
+- Leo-Request
+- Leo-Utils
 
-
-## 全局信息
-
-- 项目接口设计标准参考 `RESTFUL`，使用 `HTTP` 请求动词进行请求。
-
-**接口地址**
-
-::: tip 接口请求说明
-前端访问接口地址为：`租户域名/租户`，示例：
-租户: `foo`
-租户接口地址：`https://foo.xxx.hecs.iwnweb.com/foo/api/`
-租户域名：`https://foo.xxx.hecs.iwnweb.com/dashboard/`
-:::
-
-- 后端环境地址：<https://xxx.hecs.iwnweb.com>
-- [**接口目录**](../api/)
-- [**全局请求头**](../api/header)
-- [**全局接口响应**](../api/response)
-
-
-## 参考文档
-
-::: tip 前端
-- SCUI
-    - 官方文档：<https://lolicode.gitee.io/scui-doc/guide/>
-:::
-
-::: tip 后端
-- Laravel 框架
-    - 中文翻译文档：<https://learnku.com/docs/laravel/9.x>
-:::
+等等，这些工具能够帮助开发者快速构建应用。
+### 总结
+Leo对于常见的前端功能场景都已经做了预置，这一切都为了方便开发者能有一套开箱即用的跨端开发工具。
