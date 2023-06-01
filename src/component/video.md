@@ -44,18 +44,18 @@
 |@play|EventHandle||当开始/继续播放时触发play事件|飞书小程序不支持|
 |@pause|EventHandle||当暂停播放时触发 pause 事件|飞书小程序不支持|
 |@ended|EventHandle||当播放到末尾时触发 ended 事件|飞书小程序不支持|
-|@timeupdate|EventHandle||播放进度变化时触发，event.detail = {currentTime, duration} 。触发频率 250ms 一次|飞书小程序不支持|
+|@timeupdate|EventHandle||播放进度变化时触发，``event.detail = {currentTime, duration}`` 。触发频率 250ms 一次|飞书小程序不支持|
 |@fullscreenchange|EventHandle||当视频进入和退出全屏时触发，event.detail = {fullScreen, direction}，direction取为 vertical 或 horizontal|飞书小程序不支持|
 |@waiting|EventHandle||视频出现缓冲时触发|飞书小程序、快手小程序不支持|
 |@error|EventHandle||视频播放出错时触发|飞书小程序不支持|
-|@progress|EventHandle||加载进度变化时触发，只支持一段加载。event.detail = {buffered}，百分比|微信小程序、字节跳动小程序、H5|
+|@progress|EventHandle||加载进度变化时触发，只支持一段加载。``event.detail = {buffered}``，百分比|微信小程序、字节跳动小程序、H5|
 |@loadeddata|EventHandle||视频资源开始加载时触发|京东小程序|
 |@loadstart|EventHandle||开始加载数据|京东小程序|
 |@seeked|EventHandle||拖动进度条结束|京东小程序|
 |@seeking|EventHandle||正在拖动进度条|京东小程序|
-|@loadedmetadata|EventHandle||视频元数据加载完成时触发。event.detail = {width, height, duration}|微信小程序、H5、字节跳动小程序、京东小程序|
-|@fullscreenclick|EventHandle||视频播放全屏播放时点击事件。event.detail = { screenX:"Number类型，点击点相对于屏幕左侧边缘的 X 轴坐标", screenY:"Number类型，点击点相对于屏幕顶部边缘的 Y 轴坐标", screenWidth:"Number类型，屏幕总宽度", screenHeight:"Number类型，屏幕总高度"}|App 2.6.3+|
-|@controlstoggle|EventHandle||切换 controls 显示隐藏时触发。event.detail = {show}|微信小程序2.9.5|
+|@loadedmetadata|EventHandle||视频元数据加载完成时触发。e``vent.detail = {width, height, duration}``|微信小程序、H5、字节跳动小程序、京东小程序|
+|@fullscreenclick|EventHandle||视频播放全屏播放时点击事件。``event.detail = { screenX:"Number类型，点击点相对于屏幕左侧边缘的 X 轴坐标", screenY:"Number类型，点击点相对于屏幕顶部边缘的 Y 轴坐标", screenWidth:"Number类型，屏幕总宽度", screenHeight:"Number类型，屏幕总高度"}``|App 2.6.3+|
+|@controlstoggle|EventHandle||切换 controls 显示隐藏时触发。``event.detail = {show}``|微信小程序2.9.5|
 
 `<video>` 默认宽度 300px、高度 225px，可通过 css 设置宽高。
 

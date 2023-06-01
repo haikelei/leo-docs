@@ -48,11 +48,11 @@ enable-mic|boolean|true|否|开启或关闭麦克风|微信小程序2.10.0
 enable-agc|boolean|false|否|是否开启音频自动增益|微信小程序2.10.0
 enable-ans|boolean|false|否|是否开启音频噪声抑制|微信小程序2.10.0
 audio-volume-type|string|voicecall|否|音量类型|微信小程序2.10.0
-@statechange|EventHandle|||状态变化事件，detail = {code}|
-@netstatus|EventHandle|||网络状态通知，detail = {info}|
-@error|EventHandle|||渲染错误事件，detail = {errMsg, errCode}|
+@statechange|EventHandle|||状态变化事件，``detail = {code}``|
+@netstatus|EventHandle|||网络状态通知，``detail = {info}``|
+@error|EventHandle|||渲染错误事件，``detail = {errMsg, errCode}``|
 @bgmstart|EventHandle|||背景音开始播放时触发|微信小程序2.4.0
-@bgmprogress|EventHandle|||背景音进度变化时触发，detail = {progress, duration}|微信小程序2.4.0
+@bgmprogress|EventHandle|||背景音进度变化时触发，``detail = {progress, duration}``|微信小程序2.4.0
 @bgmcomplete|EventHandle|||背景音播放完成时触发|微信小程序2.4.0
 
 

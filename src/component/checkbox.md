@@ -3,9 +3,9 @@
 
 **属性说明**
 
-|属性名|类型|默认值|说明|
-|:-|:-|:-|:-|
-|@change|EventHandle||``<checkbox-group>``中选中项发生改变是触发 change 事件，detail = {value:[选中的checkbox的value的数组]}|
+|属性名|类型|默认值| 说明                                                   |
+|:-|:-|:-|:-----------------------------------------------------|
+|@change|EventHandle|| ``<checkbox-group>``中选中项发生改变是触发 change 事件，``detail = {value:[选中的checkbox的value的数组]}``|
 
 #### checkbox
 多选项目。

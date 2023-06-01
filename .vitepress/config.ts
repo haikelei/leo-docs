@@ -52,6 +52,7 @@ export default defineConfig({
       '/database/': sidebarDatabase(),
       '/api/': sidebarApi(),
       '/component/': sidebarComponent(),
+      '/component/uniui/': sidebarUniui(),
       '/faqs/': sidebarFAQ(),
 
       '/community/': sidebarCommunity(),
@@ -156,8 +157,24 @@ function navbar() {
     { text: '首页', link: '/' },
     // { text: '官网', link: '/home', activeMatch: `^/(home)/`, },
     { text: '快速进阶', link: '/guide/', activeMatch: `^/(guide)/`, },
-    { text: 'API', link: '/api/', activeMatch: `^/(api)/`, },
-    { text: '组件', link: '/component/', activeMatch: `^/(component)/`, },
+    { text: '内置组件', activeMatch: `^/(component)/`,
+      items: [
+        { text: '文档', link: '/component/' },
+        { text: '演示', link: 'https://hellouniapp.dcloud.net.cn/pages/component/view/view' },
+      ],
+    },
+    { text: '扩展组件', activeMatch: `^/(component/uniui)/`,
+      items: [
+        { text: '文档', link: '/component/uniui/' },
+        { text: '演示', link: 'https://hellouniapp.dcloud.net.cn/pages/extUI/badge/badge' },
+      ],
+    },
+    { text: 'API能力', activeMatch: `^/(api)/`,
+      items: [
+        { text: '文档', link: '/api/' },
+        { text: '演示', link: 'https://hellouniapp.dcloud.net.cn/pages/API/set-navigation-bar-title/set-navigation-bar-title' },
+      ],
+    },
     { text: '常见问题', link: '/faqs/', activeMatch: `^/(faqs)/`, },
     // {
     //   text: '生态系统',
@@ -239,12 +256,164 @@ function sidebarGuide() {
 }
 
 function sidebarApi() {
-  return [
+  return [  {    text: '概述',    collapsible: true,    link: '/api/README.md'  },  {    text: '基础',    link: '/api/log',    collapsible: true,    items: [      { text: '日志打印', link: '/api/log.md' },      { text: '定时器', link: '/api/timer.md' },      { text: 'uni.base64ToArrayBuffer', link: '/api/base64ToArrayBuffer.md' },      { text: 'uni.arrayBufferToBase64', link: '/api/arrayBufferToBase64.md' },      {        text: '启动',        collapsible: true,        items: [          { text: 'uni.getLaunchOptionsSync', link: '/api/getLaunchOptionsSync.md' },          { text: 'uni.getEnterOptionsSync', link: '/api/getEnterOptionsSync.md' },        ]
+    },
+      { text: '应用级事件', link: '/api/application.md' },
+      { text: '拦截器', link: '/api/interceptor.md' },
+      { text: '全局API', link: '/api/global.md' },
+      { text: 'uni.canIUse', link: '/api/caniuse.md' },
+    ]
+  },
     {
-      text: '概览',
+      text: '网络',
+      link: '/api/request/request.md',
       collapsible: true,
       items: [
-        { text: '介绍', link: '/api/' },
+        { text: '发起请求', link: '/api/request/request.md' },
+        { text: '上传、下载', link: '/api/request/network-file.md' },
+        { text: 'WebSocket', link: '/api/request/websocket.md' },
+        { text: 'SocketTask', link: '/api/request/socket-task.md' },
+        { text: 'mDNS', link: '/api/request/mDNS.md' },
+        { text: 'UDP 通信', link: '/api/request/UDP.md' },
+      ]
+    },
+    {
+      text: '页面和路由',
+      link: '/api/router',
+      collapsible: true,
+      items: [
+        { text: '路由方式', link: '/api/router' },
+        { text: '获取页面', link: '/api/window/window.md' },
+        { text: '页面通讯', link: '/api/window/communication.md' },
+      ]
+    },
+    {
+      text: '数据缓存',
+      link: '/api/storage/storage',
+      collapsible: true,
+      items: [
+        { text: '存储', link: '/api/storage/storage' },
+      ]
+    },
+    {
+      text: '位置',
+      link: '/api/location/location.md',
+      collapsible: true,
+      items: [
+        { text: '获取位置', link: '/api/location/location.md' },
+        { text: '查看位置', link: '/api/location/open-location.md' },
+        { text: '位置更新', link: '/api/location/location-change.md' },
+        { text: '地图组件控制', link: '/api/location/map.md' },
+      ]
+    },
+    {
+      text: '媒体',
+      link: '/api/media/image.md',
+      collapsible: true,
+      items: [
+        { text: '图片', link: '/api/media/image.md' },
+        { text: '文件', link: '/api/media/file.md' },
+        { text: '录音管理', link: '/api/media/record-manager.md' },
+        { text: '背景音频播放管理', link: '/api/media/background-audio-manager.md' },
+        { text: '音频组件控制', link: '/api/media/audio-context.md' },
+        { text: '视频', link: '/api/media/video.md' },
+        { text: '视频组件控制', link: '/api/media/video-context.md' },
+        { text: '相机组件控制', link: '/api/media/camera-context.md' },
+        { text: '直播组件控制', link: '/api/media/live-player-context.md' },
+        { text: '富文本', link: '/api/media/editor-context.md' },
+        { text: '音视频合成', link: '/api/media/media-container.md' }
+      ]
+    },
+    {
+      text: '设备',
+      link: '/api/system/info.md',
+      collapsible: true,
+      items: [
+        {
+          text: '系统',
+          collapsible: true,
+          items: [
+            { text: 'uni.getSystemInfo', link: '/api/system/info.md' },
+            { text: 'uni.getDeviceInfo', link: '/api/system/getDeviceInfo.md' },
+            { text: 'uni.getWindowInfo', link: '/api/system/getWindowInfo.md' },
+            { text: 'uni.getAppBaseInfo', link: '/api/system/getAppBaseInfo.md' },
+            { text: 'uni.getAppAuthorizeSetting', link: '/api/system/getappauthorizesetting.md' },
+            { text: 'uni.getSystemSetting', link: '/api/system/getsystemsetting.md' },
+            { text: 'uni.openAppAuthorizeSetting', link: '/api/system/openappauthorizesetting.md' },
+          ]
+        },
+        { text: '内存', link: '/api/system/memory.md' },
+        { text: '网络状态', link: '/api/system/network.md' },
+        { text: '系统主题', link: '/api/system/theme.md' },
+        { text: '加速度计', link: '/api/system/accelerometer.md' },
+        { text: '罗盘', link: '/api/system/compass.md' },
+        { text: '陀螺仪', link: '/api/system/gyroscope.md' },
+        { text: '拨打电话', link: '/api/system/phone.md' },
+        { text: '扫码', link: '/api/system/barcode.md' },
+        { text: '剪贴板', link: '/api/system/clipboard.md' },
+        { text: '屏幕亮度', link: '/api/system/brightness.md' },
+        { text: '用户截屏事件', link: '/api/system/capture-screen.md' },
+        { text: '振动', link: '/api/system/vibrate.md' },
+        { text: '手机联系人', link: '/api/system/contact.md' },
+        { text: '蓝牙', link: '/api/system/bluetooth.md' },
+        { text: '低功耗蓝牙', link: '/api/system/ble.md' },
+        { text: 'iBeacon', link: '/api/system/ibeacon.md' },
+        { text: 'Wi-Fi', link: '/api/system/wifi.md' },
+        { text: '电量', link: '/api/system/batteryInfo.md' },
+        { text: 'NFC', link: '/api/system/nfc.md' },
+        { text: '设备方向', link: '/api/system/deviceMotion.md' },
+        { text: '生物认证', link: '/api/system/authentication.md' },
+      ]
+    },
+    {
+      text: '键盘',
+      link: '/api/key',
+      collapsible: true,
+      items: [
+        { text: '键盘', link: '/api/key' },
+      ]
+    },
+    {
+      text: '界面',
+      collapsible: true,
+      items: [
+        { text: '交互反馈', link: '/api/ui/prompt.md' },
+        { text: '设置导航条', link: '/api/ui/navigationbar.md' },
+        { text: '设置TabBar', link: '/api/ui/tabbar.md' },
+        { text: '背景', link: '/api/ui/bgcolor.md' },
+        { text: '动画', link: '/api/ui/animation' },
+        { text: '滚动', link: '/api/ui/scroll' },
+        { text: '窗口', link: '/api/ui/window.md' },
+        { text: '宽屏适配', link: '/api/ui/adapt.md' },
+        { text: '字体', link: '/api/ui/font.md' },
+        { text: '下拉刷新', link: '/api/ui/pulldown.md' },
+        { text: '节点信息', link: '/api/ui/nodes-info.md' },
+        { text: '节点布局相交状态', link: '/api/ui/intersection-observer.md' },
+        { text: '媒体查询', link: '/api/ui/media-query-observer.md' },
+        { text: '自定义组件', link: '/api/ui/nextTick.md' },
+        { text: '菜单', link: '/api/ui/menuButton.md' },
+        { text: '语言', link: '/api/ui/locale.md' },
+      ]
+    },
+    {
+      text: '文件',
+      link: '/api/file/file',
+      collapsible: true,
+      items: [
+        { text: '文件', link: '/api/file/file' },
+      ]
+    },
+    {
+      text: '绘画',
+      collapsible: true,
+      items: [
+        { text: 'uni.createOffscreenCanvas', link: 'api/canvas/createOffscreenCanvas.md' },
+        { text: 'uni.createCanvasContext', link: 'api/canvas/createCanvasContext.md' },
+        { text: 'uni.canvasToTempFilePath', link: 'api/canvas/canvasToTempFilePath.md' },
+        { text: 'uni.canvasPutImageData', link: 'api/canvas/canvasPutImageData.md' },
+        { text: 'uni.canvasGetImageData', link: 'api/canvas/canvasGetImageData.md' },
+        { text: 'CanvasContext', link: 'api/canvas/CanvasContext.md' },
+        { text: 'CanvasGradient', link: 'api/canvas/CanvasGradient.md' },
       ]
     },
   ]
@@ -256,7 +425,7 @@ function sidebarComponent() {
       collapsible: true,
       items: [
         { text: '组件介绍', link: '/component/' },
-        { text: '视图容器', link: '/component/',
+        { text: '视图容器', link: '/component/view',
           collapsible: true,
           items: [
             { text: 'view', link: '/component/view' },
@@ -269,15 +438,135 @@ function sidebarComponent() {
             { text: 'cover-image', link: '/component/cover-image' },
           ]
         },
-        { text: '基础内容', link: '/component/' },
-        { text: '表单组件', link: '/component/' },
-        { text: '路由与页面跳转', link: '/component/' },
-        { text: '媒体组件', link: '/component/' },
-        { text: '地图', link: '/component/' },
-        { text: '画布', link: '/component/' },
-        { text: 'webview', link: '/component/' },
-        { text: '页面属性配置', link: '/component/' },
-        { text: '扩展组件（uview）', link: '/component/' },
+        { text: '基础内容', link: '/component/icon',
+          collapsible: true,
+          items: [
+            { text: 'icon', link: '/component/icon' },
+            { text: 'text', link: '/component/text' },
+            { text: 'rich-text', link: '/component/rich-text' },
+            { text: 'progress', link: '/component/progress' },
+          ]
+        },
+        { text: '表单组件', link: '/component/button',
+          collapsible: true,
+          items: [
+            { text: 'button', link: '/component/button' },
+            { text: 'checkbox', link: '/component/checkbox' },
+            { text: 'editor', link: '/component/editor' },
+            { text: 'form', link: '/component/form' },
+            { text: 'input', link: '/component/input' },
+            { text: 'label', link: '/component/label' },
+            { text: 'picker', link: '/component/picker' },
+            { text: 'picker-view', link: '/component/picker-view' },
+            { text: 'radio', link: '/component/radio' },
+            { text: 'slider', link: '/component/slider' },
+            { text: 'switch', link: '/component/switch' },
+            { text: 'textarea', link: '/component/textarea' },
+          ]
+        },
+        { text: '路由与页面跳转', link: '/component/navigator',
+          collapsible: true,
+          items: [
+            { text: 'navigator', link: '/component/navigator' },
+          ]
+        },
+        { text: '媒体组件', link: '/component/audio',
+          collapsible: true,
+          items: [
+            { text: 'animation-view', link: '/component/animation-view' },
+            { text: 'audio', link: '/component/audio' },
+            { text: 'camera', link: '/component/camera' },
+            { text: 'image', link: '/component/image' },
+            { text: 'video', link: '/component/video' },
+            { text: 'live-player', link: '/component/live-player' },
+            { text: 'live-pusher', link: '/component/live-pusher' },
+          ]
+        },
+        { text: '地图', link: '/component/map',
+          collapsible: true,
+          items: [
+            { text: 'map', link: '/component/map' },
+          ]
+        },
+        { text: '画布', link: '/component/canvas',
+          collapsible: true,
+          items: [
+            { text: 'canvas', link: '/component/canvas' },
+          ]
+        },
+        { text: 'web-view', link: '/component/web-view',
+          collapsible: true,
+          items: [
+            { text: 'web-view', link: '/component/web-view' },
+          ]
+        },
+        { text: '页面属性配置', link: '/component/page-meta',
+          collapsible: true,
+          items: [
+            { text: 'page-meta', link: '/component/page-meta' },
+            { text: 'navigation-bar', link: '/component/navigation-bar' },
+            { text: 'custom-tab-bar', link: '/component/custom-tab-bar' },
+          ]
+        },
+      ]
+    },
+  ]
+}
+
+function sidebarUniui() {
+  return [
+    {
+      text: '概述',
+      collapsible: true,
+      items: [
+        { text: '扩展组件', link: '/component/uniui/' },
+        { text: '开始使用', link: '/component/uniui/quickstart' },
+        { text: '色彩说明', link: '/component/uniui/color' },
+        { text: 'uni-sass 辅助样式', link: '/component/uniui/uni-sass.md'},
+        { text: 'uni-badge 数字角标', link: '/component/uniui/uni-badge.md' },
+        { text: 'uni-breadcrumb 面包屑', link: '/component/uniui/uni-breadcrumb.md'},
+        { text: 'uni-calendar 日历', link: '/component/uniui/uni-calendar.md'},
+        { text: 'uni-card 卡片', link: '/component/uniui/uni-card.md'},
+        { text: 'uni-collapse 折叠面板', link: '/component/uniui/uni-collapse.md'},
+        { text: 'uni-combox 组合框', link: '/component/uniui/uni-combox.md'},
+        { text: 'uni-countdown 倒计时', link: '/component/uniui/uni-countdown.md'},
+        { text: 'uni-data-checkbox 数据选择器', link: '/component/uniui/uni-data-checkbox.md'},
+        { text: 'uni-data-picker 级联选择器', link: '/component/uniui/uni-data-picker.md'},
+        { text: 'uni-data-select 下拉框', link: '/component/uniui/uni-data-select.md'},
+        { text: 'uni-dateformat 日期格式化', link: '/component/uniui/uni-dateformat.md'},
+        { text: 'uni-datetime-picker 日期选择器', link: '/component/uniui/uni-datetime-picker.md'},
+        { text: 'uni-drawer 抽屉', link: '/component/uniui/uni-drawer.md'},
+        { text: 'uni-easyinput 增强输入框', link: '/component/uniui/uni-easyinput.md'},
+        { text: 'uni-fab 悬浮按钮', link: '/component/uniui/uni-fab.md'},
+        { text: 'uni-fav 收藏按钮', link: '/component/uniui/uni-fav.md'},
+        { text: 'uni-file-picker 文件选择上传', link: '/component/uniui/uni-file-picker.md'},
+        { text: 'uni-forms 表单', link: '/component/uniui/uni-forms.md'},
+        { text: 'uni-goods-nav 商品导航', link: '/component/uniui/uni-goods-nav.md'},
+        { text: 'uni-grid 宫格', link: '/component/uniui/uni-grid.md'},
+        { text: 'uni-group 分组', link: '/component/uniui/uni-group.md'},
+        { text: 'uni-icons 图标', link: '/component/uniui/uni-icons.md'},
+        { text: 'uni-indexed-list 索引列表', link: '/component/uniui/uni-indexed-list.md'},
+        { text: 'uni-link 超链接', link: '/component/uniui/uni-link.md'},
+        { text: 'uni-list 列表', link: '/component/uniui/uni-list.md'},
+        { text: 'uni-load-more 加载更多', link: '/component/uniui/uni-load-more.md'},
+        { text: 'uni-nav-bar 自定义导航栏', link: '/component/uniui/uni-nav-bar.md'},
+        { text: 'uni-notice-bar 通告栏', link: '/component/uniui/uni-notice-bar.md'},
+        { text: 'uni-number-box 数字输入框', link: '/component/uniui/uni-number-box.md'},
+        { text: 'uni-pagination 分页器', link: '/component/uniui/uni-pagination.md'},
+        { text: 'uni-popup 弹出层', link: '/component/uniui/uni-popup.md'},
+        { text: 'uni-rate 评分', link: '/component/uniui/uni-rate.md'},
+        { text: 'uni-row 布局-行', link: '/component/uniui/uni-row.md'},
+        { text: 'uni-search-bar 搜索栏', link: '/component/uniui/uni-search-bar.md'},
+        { text: 'uni-section 标题栏', link: '/component/uniui/uni-section.md'},
+        { text: 'uni-segmented-control 分段器', link: '/component/uniui/uni-segmented-control.md'},
+        { text: 'uni-steps 步骤条', link: '/component/uniui/uni-steps.md'},
+        { text: 'uni-swipe-action 滑动操作', link: '/component/uniui/uni-swipe-action.md'},
+        { text: 'uni-swiper-dot 轮播图指示点', link: '/component/uniui/uni-swiper-dot.md'},
+        { text: 'uni-table 表格', link: '/component/uniui/uni-table.md'},
+        { text: 'uni-tag 标签', link: '/component/uniui/uni-tag.md'},
+        { text: 'uni-title 章节标题', link: '/component/uniui/uni-title.md'},
+        { text: 'uni-tooltip 文字提示', link: '/component/uniui/uni-tooltip.md'},
+        { text: 'uni-transition 过渡动画', link: '/component/uniui/uni-transition.md'},
       ]
     },
   ]
