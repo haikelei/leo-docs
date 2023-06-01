@@ -1,10 +1,11 @@
 {
-  "name": "vitepress-doc-website",
+  "name": "leo-docs",
   "version": "1.0.0",
   "main": "index.js",
   "author": "mouyong <my24251325@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
+    "deploy-h5-test": "sh bin/publish_hub.sh",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:serve": "vitepress serve"
