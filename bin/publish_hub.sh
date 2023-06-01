@@ -6,7 +6,7 @@ VERSION=$(node -p "require('./package.json').version")
 echo "版本号: $VERSION"
 
 # 构建应用
-#npm run docs:build &&
+npm run docs:build &&
 
 # 构建 Docker 镜像
 docker build -t ${PROJECT_NAME} . &&
