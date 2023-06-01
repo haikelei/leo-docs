@@ -80,8 +80,8 @@ export default defineConfig({
     //   },
     // ],
     footer: {
-      // message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
-      copyright: 'Copyright © 2014-present <a href="https://mouyong.github.io" target="_blank">mouyong</a><br><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">蜀ICP备17018093号</a>'
+      message: 'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
+      // copyright: 'Copyright © 2014-present <a href="https://mouyong.github.io" target="_blank">mouyong</a><br><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">蜀ICP备17018093号</a>'
     },
 
     editLink: {
@@ -249,7 +249,7 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: '条件编译', link: '/guide/compile' },
-        { text: '运行和调试', link: '/guide/debug' },
+        // { text: '运行和调试', link: '/guide/debug' },
       ]
     },
   ]
