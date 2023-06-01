@@ -1,0 +1,1 @@
+import{_ as s,c as t,o as a,N as n}from"./chunks/framework.fc67cb9d.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/router.md","lastUpdated":1685603474000}'),l={name:"api/router.md"},e=n("",97),o=[e];function p(c,r,i,y,F,D){return a(),t("div",null,o)}const C=s(l,[["render",p]]);export{g as __pageData,C as default};

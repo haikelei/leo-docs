@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as a,N as o}from"./chunks/framework.fc67cb9d.js";const w=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/worker.md","lastUpdated":1685603474000}'),t={name:"api/worker.md"},i=o("",3),l=[i];function s(n,p,c,_,d,h){return a(),r("div",null,l)}const m=e(t,[["render",s]]);export{w as __pageData,m as default};

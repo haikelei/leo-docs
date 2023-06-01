@@ -1,0 +1,1 @@
+import{_ as t,c as s,o as a,N as n}from"./chunks/framework.fc67cb9d.js";const F=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/system/ble.md","lastUpdated":1685603474000}'),e={name:"api/system/ble.md"},l=n("",101),d=[l];function o(r,p,c,i,y,h){return a(),s("div",null,d)}const C=t(e,[["render",o]]);export{F as __pageData,C as default};

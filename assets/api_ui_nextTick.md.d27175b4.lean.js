@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,N as n}from"./chunks/framework.fc67cb9d.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/ui/nextTick.md","lastUpdated":1685603474000}'),i={name:"api/ui/nextTick.md"},r=n("",3),c=[r];function o(l,s,_,p,m,d){return a(),t("div",null,c)}const h=e(i,[["render",o]]);export{f as __pageData,h as default};

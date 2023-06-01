@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r,N as a}from"./chunks/framework.fc67cb9d.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/other/sport.md","lastUpdated":1685603474000}'),o={name:"api/other/sport.md"},p=a("",4),n=[p];function s(i,l,_,c,d,h){return r(),t("div",null,n)}const u=e(o,[["render",s]]);export{m as __pageData,u as default};

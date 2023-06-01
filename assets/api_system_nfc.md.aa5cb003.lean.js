@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,N as r}from"./chunks/framework.fc67cb9d.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/system/nfc.md","lastUpdated":1685603474000}'),n={name:"api/system/nfc.md"},o=r("",3),s=[o];function l(i,c,p,_,d,f){return a(),t("div",null,s)}const u=e(n,[["render",l]]);export{m as __pageData,u as default};

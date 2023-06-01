@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as t,N as a}from"./chunks/framework.fc67cb9d.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/caniuse.md","lastUpdated":1685603474000}'),e={name:"api/caniuse.md"},l=a("",11),o=[l];function p(c,r,i,y,D,F){return t(),n("div",null,o)}const C=s(e,[["render",p]]);export{A as __pageData,C as default};

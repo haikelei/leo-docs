@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as l,N as n}from"./chunks/framework.fc67cb9d.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/ui/bgcolor.md","lastUpdated":1685603474000}'),s={name:"api/ui/bgcolor.md"},a=n("",16),o=[a];function r(d,i,c,p,y,g){return l(),e("div",null,o)}const f=t(s,[["render",r]]);export{h as __pageData,f as default};

@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as i,N as o}from"./chunks/framework.fc67cb9d.js";const b=JSON.parse('{"title":"Leo介绍","description":"","frontmatter":{},"headers":[],"relativePath":"guide/index.md","lastUpdated":1685603474000}'),l={name:"guide/index.md"},t=o("",16),r=[t];function n(d,h,s,c,p,u){return i(),a("div",null,r)}const m=e(l,[["render",n]]);export{b as __pageData,m as default};

@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as l,N as s}from"./chunks/framework.fc67cb9d.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/ui/scroll.md","lastUpdated":1685603474000}'),n={name:"api/ui/scroll.md"},a=s("",10),o=[a];function d(r,c,i,p,y,g){return l(),e("div",null,o)}const f=t(n,[["render",d]]);export{x as __pageData,f as default};

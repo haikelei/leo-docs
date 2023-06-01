@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as l,N as n}from"./chunks/framework.fc67cb9d.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/ui/tabbar.md","lastUpdated":1685603474000}'),a={name:"api/ui/tabbar.md"},s=n("",69),d=[s];function o(r,i,y,p,c,g){return l(),e("div",null,d)}const f=t(a,[["render",o]]);export{h as __pageData,f as default};

@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,N as o}from"./chunks/framework.fc67cb9d.js";const u=JSON.parse('{"title":"团队介绍","description":"","frontmatter":{},"headers":[],"relativePath":"guide/team.md","lastUpdated":1685603474000}'),r={name:"guide/team.md"},s=o("",6),n=[s];function c(i,d,_,h,l,p){return t(),a("div",null,n)}const f=e(r,[["render",c]]);export{u as __pageData,f as default};

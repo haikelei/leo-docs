@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as d,N as i}from"./chunks/framework.fc67cb9d.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/system/wifi.md","lastUpdated":1685603474000}'),n={name:"api/system/wifi.md"},r=i("",82),a=[r];function o(l,h,s,c,f,p){return d(),e("div",null,a)}const g=t(n,[["render",o]]);export{u as __pageData,g as default};

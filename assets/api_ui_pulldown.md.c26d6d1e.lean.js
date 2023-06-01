@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,N as l}from"./chunks/framework.fc67cb9d.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/ui/pulldown.md","lastUpdated":1685603474000}'),t={name:"api/ui/pulldown.md"},o=l("",22),p=[o];function e(r,c,F,y,D,i){return a(),n("div",null,p)}const f=s(t,[["render",e]]);export{u as __pageData,f as default};

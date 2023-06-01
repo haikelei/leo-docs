@@ -1,0 +1,1 @@
+import{_ as e,c as a,o,N as t}from"./chunks/framework.fc67cb9d.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/lifecycle.md","lastUpdated":1685603474000}'),c={name:"api/lifecycle.md"},l=t("",4),n=[l];function i(r,d,s,_,p,h){return o(),a("div",null,n)}const u=e(c,[["render",i]]);export{m as __pageData,u as default};

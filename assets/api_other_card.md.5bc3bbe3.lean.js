@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as r,N as t}from"./chunks/framework.fc67cb9d.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/other/card.md","lastUpdated":1685603474000}'),o={name:"api/other/card.md"},i=t("",3),n=[i];function c(l,_,s,p,d,h){return r(),a("div",null,n)}const u=e(o,[["render",c]]);export{f as __pageData,u as default};

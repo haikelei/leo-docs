@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as l,N as a}from"./chunks/framework.fc67cb9d.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/system/phone.md","lastUpdated":1685603474000}'),n={name:"api/system/phone.md"},s=a("",8),o=[s];function r(p,i,c,d,h,g){return l(),e("div",null,o)}const u=t(n,[["render",r]]);export{f as __pageData,u as default};

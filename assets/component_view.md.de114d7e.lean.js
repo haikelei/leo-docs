@@ -1,0 +1,1 @@
+import{_ as s,c as l,o as n,N as a}from"./chunks/framework.fc67cb9d.js";const C=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"component/view.md","lastUpdated":1685603474000}'),t={name:"component/view.md"},p=a("",14),o=[p];function e(c,r,D,F,y,i){return n(),l("div",null,o)}const g=s(t,[["render",e]]);export{C as __pageData,g as default};

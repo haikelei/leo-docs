@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as l,N as a}from"./chunks/framework.fc67cb9d.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/timer.md","lastUpdated":1685603474000}'),s={name:"api/timer.md"},n=a("",24),r=[n];function i(d,o,h,y,g,c){return l(),e("div",null,r)}const x=t(s,[["render",i]]);export{p as __pageData,x as default};
